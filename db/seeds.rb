@@ -6,6 +6,45 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Video.create!(title: 'Monk', description: 'Monk is a detective.', small_cover_url: '/tmp/monk.jpg', large_cover_url: '/tmp/monk_large.jpg')
-Video.create!(title: 'Monk', description: 'Monk is a detective.', small_cover_url: '/tmp/monk.jpg', large_cover_url: '/tmp/monk_large.jpg')
-Video.create!(title: 'Monk', description: 'Monk is a detective.', small_cover_url: '/tmp/monk.jpg', large_cover_url: '/tmp/monk_large.jpg')
+comedy = Category.create!(name: 'Comedy')
+reality = Category.create!(name: 'Reality')
+animation = Category.create!(name: 'Animation')
+
+Video.create!(
+  title: 'Monk', 
+  description: 'Monk is a detective.', 
+  small_cover_url: '/tmp/monk.jpg', 
+  large_cover_url: '/tmp/monk_large.jpg',
+  category: comedy
+)
+Video.create!(
+  title: 'Monk', 
+  description: 'Monk is a detective.', 
+  small_cover_url: '/tmp/monk.jpg', 
+  large_cover_url: '/tmp/monk_large.jpg',
+  category: comedy
+)
+Video.create!(title: 'Monk', 
+  description: 'Monk is a detective.', 
+  small_cover_url: '/tmp/monk.jpg', 
+  large_cover_url: '/tmp/monk_large.jpg',
+  category: reality
+)
+Video.create!(title: 'Monk', 
+  description: 'Monk is a detective.', 
+  small_cover_url: '/tmp/monk.jpg', 
+  large_cover_url: '/tmp/monk_large.jpg',
+  category: animation
+)
+Video.create!(title: 'Monk', 
+  description: 'Monk is a detective.', 
+  small_cover_url: '/tmp/monk.jpg', 
+  large_cover_url: '/tmp/monk_large.jpg',
+  category: animation
+)
+Video.create!(title: 'Monk', 
+  description: 'Monk is a detective.', 
+  small_cover_url: '/tmp/monk.jpg', 
+  large_cover_url: '/tmp/monk_large.jpg',
+  category: animation
+)
